@@ -1,0 +1,1238 @@
+{
+  "users": [
+    {
+      "id": "usr_demo_academic",
+      "name": "Dr. Elena Vance",
+      "email": "demo@papercast.ai",
+      "role": "academic",
+      "profileImage": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "createdAt": "2026-09-01T10:00:00.000Z",
+      "lastLogin": "2026-10-04T16:46:47.677Z",
+      "preferences": {
+        "theme": "dark",
+        "hostVoice": "Puck",
+        "researcherVoice": "Kore",
+        "audioSpeed": 1,
+        "emailNotifications": true
+      }
+    },
+    {
+      "id": "usr_17911354795195pa5",
+      "name": "deepika",
+      "email": "deepikamr2006@gmail.com",
+      "role": "researcher",
+      "createdAt": "2026-10-04T17:37:59.519Z",
+      "lastLogin": "2026-10-04T17:50:26.744Z",
+      "profileImage": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "preferences": {
+        "theme": "dark",
+        "hostVoice": "Puck",
+        "researcherVoice": "Kore",
+        "audioSpeed": 1,
+        "emailNotifications": true
+      }
+    }
+  ],
+  "research_papers": [
+    {
+      "id": "paper_1791136229344a3kp",
+      "userId": "usr_17911354795195pa5",
+      "title": "S44163 022 00022 8",
+      "authors": [
+        "Lead Research Group",
+        "Collaborating Investigators"
+      ],
+      "abstract": "This research explores automated machine learning and neural architectures....",
+      "fileName": "s44163-022-00022-8.pdf",
+      "fileSize": 75,
+      "uploadedAt": "2026-10-04T17:50:29.344Z",
+      "publicationDate": "2026-10-04",
+      "keywords": [
+        "Neural",
+        "Architecture"
+      ],
+      "processingStatus": "completed"
+    },
+    {
+      "id": "paper_1791135708979ci45",
+      "userId": "usr_17911354795195pa5",
+      "title": "AI",
+      "authors": [
+        "Lead Research Group",
+        "Collaborating Investigators"
+      ],
+      "abstract": "...",
+      "fileName": "s44163-022-00022-8.pdf",
+      "fileSize": 1657198,
+      "uploadedAt": "2026-10-04T17:41:48.979Z",
+      "publicationDate": "2026-10-04",
+      "keywords": [
+        "Research",
+        "Empirical Study"
+      ],
+      "processingStatus": "completed"
+    },
+    {
+      "id": "paper_1791134411138ioqx",
+      "userId": "usr_demo_academic",
+      "title": "AI",
+      "authors": [
+        "Lead Research Group",
+        "Collaborating Investigators"
+      ],
+      "abstract": "...",
+      "fileName": "s44163-022-00022-8.pdf",
+      "fileSize": 1657198,
+      "uploadedAt": "2026-10-04T17:20:11.138Z",
+      "publicationDate": "2026-10-04",
+      "keywords": [
+        "Research",
+        "Empirical Study"
+      ],
+      "processingStatus": "completed"
+    },
+    {
+      "id": "paper_1791132907666l0r3",
+      "userId": "usr_demo_academic",
+      "title": "MLT assignment report",
+      "authors": [
+        "Lead Research Group",
+        "Collaborating Investigators"
+      ],
+      "abstract": "...",
+      "fileName": "ilovepdf_merged.pdf",
+      "fileSize": 1285593,
+      "uploadedAt": "2026-10-04T16:55:07.666Z",
+      "publicationDate": "2026-10-04",
+      "keywords": [
+        "Research",
+        "Empirical Study"
+      ],
+      "processingStatus": "completed"
+    },
+    {
+      "id": "paper_1791132550049pg74",
+      "userId": "usr_demo_academic",
+      "title": "Dv 12",
+      "authors": [
+        "Lead Research Group",
+        "Collaborating Investigators"
+      ],
+      "abstract": "...",
+      "fileName": "dv 12.pdf",
+      "fileSize": 355931,
+      "uploadedAt": "2026-10-04T16:49:10.049Z",
+      "publicationDate": "2026-10-04",
+      "keywords": [
+        "Research",
+        "Empirical Study"
+      ],
+      "processingStatus": "completed"
+    },
+    {
+      "id": "paper_attention_2017",
+      "userId": "usr_demo_academic",
+      "title": "Attention Is All You Need: The Transformer Architecture",
+      "authors": [
+        "Ashish Vaswani",
+        "Noam Shazeer",
+        "Niki Parmar",
+        "Jakob Uszkoreit",
+        "Llion Jones",
+        "Aidan N. Gomez",
+        "Lukasz Kaiser",
+        "Illia Polosukhin"
+      ],
+      "abstract": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train.",
+      "fileName": "vaswani2017_attention.pdf",
+      "fileSize": 2200000,
+      "uploadedAt": "2026-09-28T14:20:00.000Z",
+      "publicationDate": "2017-06-12",
+      "keywords": [
+        "Transformers",
+        "Self-Attention",
+        "NLP",
+        "Machine Translation",
+        "Neural Networks"
+      ],
+      "processingStatus": "completed"
+    }
+  ],
+  "paper_sections": [
+    {
+      "id": "sec_1",
+      "paperId": "paper_attention_2017",
+      "sectionName": "abstract",
+      "orderIndex": 0,
+      "originalText": "We propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for as little as twelve hours on eight P100 GPUs.",
+      "summary": "Introduces the Transformer model, abandoning recurrent and convolutional neural networks entirely in favor of multi-head self-attention, dramatically speeding up training time to 12 hours on 8 GPUs."
+    },
+    {
+      "id": "sec_2",
+      "paperId": "paper_attention_2017",
+      "sectionName": "introduction",
+      "orderIndex": 1,
+      "originalText": "Recurrent neural networks, particularly LSTM and GRU, have been established as state of the art in sequential modeling. However, sequential computation precludes parallelization within training examples, which becomes critical at longer sequence lengths.",
+      "summary": "Identifies the fundamental bottleneck of sequential computation in RNNs/LSTMs: inability to parallelize across tokens, leading to computational bottlenecks on large text corpora."
+    },
+    {
+      "id": "sec_3",
+      "paperId": "paper_attention_2017",
+      "sectionName": "methodology",
+      "orderIndex": 2,
+      "originalText": "The Transformer follows an encoder-decoder structure using stacked self-attention and point-wise, fully connected layers. We utilize Scaled Dot-Product Attention: Attention(Q, K, V) = softmax(Q * K^T / sqrt(d_k)) * V, and extend it to Multi-Head Attention with 8 parallel attention heads.",
+      "summary": "Employs an encoder-decoder topology with Scaled Dot-Product Attention normalized by sqrt(d_k), expanding to 8 parallel attention heads with dimension d_model=512."
+    },
+    {
+      "id": "sec_4",
+      "paperId": "paper_attention_2017",
+      "sectionName": "results",
+      "orderIndex": 3,
+      "originalText": "On the WMT 2014 English-to-German translation task, the big transformer model achieves a state-of-the-art BLEU score of 28.4, outperforming existing best models by more than 2.0 BLEU. On English-to-French, it sets a single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on 8 GPUs.",
+      "summary": "Achieved 28.4 BLEU on WMT 2014 English-German (beating prior SOTA by >2.0 BLEU) and 41.8 BLEU on English-French with a fraction of prior training cost."
+    },
+    {
+      "id": "sec_5",
+      "paperId": "paper_attention_2017",
+      "sectionName": "conclusion",
+      "orderIndex": 4,
+      "originalText": "We presented the Transformer, the first sequence transduction model based entirely on attention, replacing recurrent layers with multi-headed self-attention. It can be trained significantly faster than architectures based on recurrent or convolutional layers.",
+      "summary": "Self-attention completely supersedes recurrence for sequence transduction, establishing the structural foundation for all contemporary large language models."
+    },
+    {
+      "id": "sec_paper_1791132550049pg74_0",
+      "paperId": "paper_1791132550049pg74",
+      "sectionName": "abstract",
+      "originalText": "Comprehensive abstract outlining research problem and key findings.",
+      "summary": "Presents the foundational motivation of the research, primary hypotheses, and critical experimental outcomes.",
+      "orderIndex": 0
+    },
+    {
+      "id": "sec_paper_1791132550049pg74_1",
+      "paperId": "paper_1791132550049pg74",
+      "sectionName": "introduction",
+      "originalText": "Introduces the contextual literature, deficiencies in prior paradigms, and scope.",
+      "summary": "Outlines the technical motivation and historical barriers preventing prior methodologies from scaling effectively.",
+      "orderIndex": 1
+    },
+    {
+      "id": "sec_paper_1791132550049pg74_2",
+      "paperId": "paper_1791132550049pg74",
+      "sectionName": "methodology",
+      "originalText": "Detailed specifications of the architecture, datasets, hyperparameter configurations, and evaluation metrics.",
+      "summary": "Details the mathematical formulation, algorithmic pipelines, and experimental parameterization used to test the hypothesis.",
+      "orderIndex": 2
+    },
+    {
+      "id": "sec_paper_1791132550049pg74_3",
+      "paperId": "paper_1791132550049pg74",
+      "sectionName": "results",
+      "originalText": "Empirical benchmarks demonstrating quantitative performance over baseline comparisons.",
+      "summary": "Reports empirical quantitative findings, validating superior performance metrics over comparative baselines.",
+      "orderIndex": 3
+    },
+    {
+      "id": "sec_paper_1791132550049pg74_4",
+      "paperId": "paper_1791132550049pg74",
+      "sectionName": "conclusion",
+      "originalText": "Synthesizes key takeaways, real-world applicability, and avenues for ongoing exploration.",
+      "summary": "Synthesizes primary contributions, confirming the viability of the approach and outlining potential future extensions.",
+      "orderIndex": 4
+    },
+    {
+      "id": "sec_paper_1791132907666l0r3_0",
+      "paperId": "paper_1791132907666l0r3",
+      "sectionName": "abstract",
+      "originalText": "Comprehensive abstract outlining research problem and key findings.",
+      "summary": "Presents the foundational motivation of the research, primary hypotheses, and critical experimental outcomes.",
+      "orderIndex": 0
+    },
+    {
+      "id": "sec_paper_1791132907666l0r3_1",
+      "paperId": "paper_1791132907666l0r3",
+      "sectionName": "introduction",
+      "originalText": "Introduces the contextual literature, deficiencies in prior paradigms, and scope.",
+      "summary": "Outlines the technical motivation and historical barriers preventing prior methodologies from scaling effectively.",
+      "orderIndex": 1
+    },
+    {
+      "id": "sec_paper_1791132907666l0r3_2",
+      "paperId": "paper_1791132907666l0r3",
+      "sectionName": "methodology",
+      "originalText": "Detailed specifications of the architecture, datasets, hyperparameter configurations, and evaluation metrics.",
+      "summary": "Details the mathematical formulation, algorithmic pipelines, and experimental parameterization used to test the hypothesis.",
+      "orderIndex": 2
+    },
+    {
+      "id": "sec_paper_1791132907666l0r3_3",
+      "paperId": "paper_1791132907666l0r3",
+      "sectionName": "results",
+      "originalText": "Empirical benchmarks demonstrating quantitative performance over baseline comparisons.",
+      "summary": "Reports empirical quantitative findings, validating superior performance metrics over comparative baselines.",
+      "orderIndex": 3
+    },
+    {
+      "id": "sec_paper_1791132907666l0r3_4",
+      "paperId": "paper_1791132907666l0r3",
+      "sectionName": "conclusion",
+      "originalText": "Synthesizes key takeaways, real-world applicability, and avenues for ongoing exploration.",
+      "summary": "Synthesizes primary contributions, confirming the viability of the approach and outlining potential future extensions.",
+      "orderIndex": 4
+    },
+    {
+      "id": "sec_paper_1791134411138ioqx_0",
+      "paperId": "paper_1791134411138ioqx",
+      "sectionName": "abstract",
+      "originalText": "Comprehensive abstract outlining research problem and key findings.",
+      "summary": "Presents the foundational motivation of the research, primary hypotheses, and critical experimental outcomes.",
+      "orderIndex": 0
+    },
+    {
+      "id": "sec_paper_1791134411138ioqx_1",
+      "paperId": "paper_1791134411138ioqx",
+      "sectionName": "introduction",
+      "originalText": "Introduces the contextual literature, deficiencies in prior paradigms, and scope.",
+      "summary": "Outlines the technical motivation and historical barriers preventing prior methodologies from scaling effectively.",
+      "orderIndex": 1
+    },
+    {
+      "id": "sec_paper_1791134411138ioqx_2",
+      "paperId": "paper_1791134411138ioqx",
+      "sectionName": "methodology",
+      "originalText": "Detailed specifications of the architecture, datasets, hyperparameter configurations, and evaluation metrics.",
+      "summary": "Details the mathematical formulation, algorithmic pipelines, and experimental parameterization used to test the hypothesis.",
+      "orderIndex": 2
+    },
+    {
+      "id": "sec_paper_1791134411138ioqx_3",
+      "paperId": "paper_1791134411138ioqx",
+      "sectionName": "results",
+      "originalText": "Empirical benchmarks demonstrating quantitative performance over baseline comparisons.",
+      "summary": "Reports empirical quantitative findings, validating superior performance metrics over comparative baselines.",
+      "orderIndex": 3
+    },
+    {
+      "id": "sec_paper_1791134411138ioqx_4",
+      "paperId": "paper_1791134411138ioqx",
+      "sectionName": "conclusion",
+      "originalText": "Synthesizes key takeaways, real-world applicability, and avenues for ongoing exploration.",
+      "summary": "Synthesizes primary contributions, confirming the viability of the approach and outlining potential future extensions.",
+      "orderIndex": 4
+    },
+    {
+      "id": "sec_paper_1791135708979ci45_0",
+      "paperId": "paper_1791135708979ci45",
+      "sectionName": "abstract",
+      "originalText": "Comprehensive abstract outlining research problem and key findings.",
+      "summary": "Presents the foundational motivation of the research, primary hypotheses, and critical experimental outcomes.",
+      "orderIndex": 0
+    },
+    {
+      "id": "sec_paper_1791135708979ci45_1",
+      "paperId": "paper_1791135708979ci45",
+      "sectionName": "introduction",
+      "originalText": "Introduces the contextual literature, deficiencies in prior paradigms, and scope.",
+      "summary": "Outlines the technical motivation and historical barriers preventing prior methodologies from scaling effectively.",
+      "orderIndex": 1
+    },
+    {
+      "id": "sec_paper_1791135708979ci45_2",
+      "paperId": "paper_1791135708979ci45",
+      "sectionName": "methodology",
+      "originalText": "Detailed specifications of the architecture, datasets, hyperparameter configurations, and evaluation metrics.",
+      "summary": "Details the mathematical formulation, algorithmic pipelines, and experimental parameterization used to test the hypothesis.",
+      "orderIndex": 2
+    },
+    {
+      "id": "sec_paper_1791135708979ci45_3",
+      "paperId": "paper_1791135708979ci45",
+      "sectionName": "results",
+      "originalText": "Empirical benchmarks demonstrating quantitative performance over baseline comparisons.",
+      "summary": "Reports empirical quantitative findings, validating superior performance metrics over comparative baselines.",
+      "orderIndex": 3
+    },
+    {
+      "id": "sec_paper_1791135708979ci45_4",
+      "paperId": "paper_1791135708979ci45",
+      "sectionName": "conclusion",
+      "originalText": "Synthesizes key takeaways, real-world applicability, and avenues for ongoing exploration.",
+      "summary": "Synthesizes primary contributions, confirming the viability of the approach and outlining potential future extensions.",
+      "orderIndex": 4
+    },
+    {
+      "id": "sec_paper_1791136229344a3kp_0",
+      "paperId": "paper_1791136229344a3kp",
+      "sectionName": "abstract",
+      "originalText": "This research explores automated machine learning and neural architectures.",
+      "summary": "Presents the foundational motivation of the research, primary hypotheses, and critical experimental outcomes.",
+      "orderIndex": 0
+    },
+    {
+      "id": "sec_paper_1791136229344a3kp_1",
+      "paperId": "paper_1791136229344a3kp",
+      "sectionName": "introduction",
+      "originalText": "Introduces the contextual literature, deficiencies in prior paradigms, and scope.",
+      "summary": "Outlines the technical motivation and historical barriers preventing prior methodologies from scaling effectively.",
+      "orderIndex": 1
+    },
+    {
+      "id": "sec_paper_1791136229344a3kp_2",
+      "paperId": "paper_1791136229344a3kp",
+      "sectionName": "methodology",
+      "originalText": "Detailed specifications of the architecture, datasets, hyperparameter configurations, and evaluation metrics.",
+      "summary": "Details the mathematical formulation, algorithmic pipelines, and experimental parameterization used to test the hypothesis.",
+      "orderIndex": 2
+    },
+    {
+      "id": "sec_paper_1791136229344a3kp_3",
+      "paperId": "paper_1791136229344a3kp",
+      "sectionName": "results",
+      "originalText": "Empirical benchmarks demonstrating quantitative performance over baseline comparisons.",
+      "summary": "Reports empirical quantitative findings, validating superior performance metrics over comparative baselines.",
+      "orderIndex": 3
+    },
+    {
+      "id": "sec_paper_1791136229344a3kp_4",
+      "paperId": "paper_1791136229344a3kp",
+      "sectionName": "conclusion",
+      "originalText": "Synthesizes key takeaways, real-world applicability, and avenues for ongoing exploration.",
+      "summary": "Synthesizes primary contributions, confirming the viability of the approach and outlining potential future extensions.",
+      "orderIndex": 4
+    }
+  ],
+  "podcasts": [
+    {
+      "id": "pod_1791135709114750x",
+      "userId": "usr_17911354795195pa5",
+      "paperId": "paper_1791135708979ci45",
+      "title": "AI: The AI Podcast Breakdown",
+      "script": "HOST: Welcome to PaperCast AI! Today we're breaking down an insightful new research paper titled \"AI\", authored by Lead Research Group, Collaborating Investigators. Dr. Aris, what core question is this work tackling?\n\nRESEARCHER: Thanks for having me! At its core, this study addresses fundamental roadblocks in previous work. The authors observed that traditional methods struggle with efficiency and scalability, necessitating a fresh architectural strategy.\n\nHOST: And how did they approach solving it? What's the key methodological innovation here?\n\nRESEARCHER: They formulated a dedicated experimental methodology. Rather than relying on standard monolithic assumptions, they redesigned the computation pipeline to maximize data throughput and maintain high precision across complex benchmarks.\n\nHOST: That sounds like a meaningful upgrade. What did the empirical experiments demonstrate when they tested this against standard baselines?\n\nRESEARCHER: The empirical results revealed solid quantitative improvements. Across test benchmarks, the proposed design outperformed baseline configurations while maintaining computational efficiency and robust error bounds.\n\nHOST: Before we wrap up, what are the primary limitations or caveats that listeners and researchers should keep in mind?\n\nRESEARCHER: As the authors transparently note, performance depends on high-quality source training conditions and specific hyperparameter tuning. It isn't a silver bullet, but it establishes a strong precedent for subsequent breakthroughs.",
+      "duration": 112,
+      "status": "completed",
+      "createdAt": "2026-10-04T17:41:49.114Z",
+      "completedAt": "2026-10-04T17:42:03.203Z",
+      "audioUrl": "/api/podcasts/pod_1791135709114750x/audio"
+    },
+    {
+      "id": "pod_1791134411492nlrq",
+      "userId": "usr_demo_academic",
+      "paperId": "paper_1791134411138ioqx",
+      "title": "AI: The AI Podcast Breakdown",
+      "script": "HOST: Welcome to PaperCast AI! Today we're breaking down an insightful new research paper titled \"AI\", authored by Lead Research Group, Collaborating Investigators. Dr. Aris, what core question is this work tackling?\n\nRESEARCHER: Thanks for having me! At its core, this study addresses fundamental roadblocks in previous work. The authors observed that traditional methods struggle with efficiency and scalability, necessitating a fresh architectural strategy.\n\nHOST: And how did they approach solving it? What's the key methodological innovation here?\n\nRESEARCHER: They formulated a dedicated experimental methodology. Rather than relying on standard monolithic assumptions, they redesigned the computation pipeline to maximize data throughput and maintain high precision across complex benchmarks.\n\nHOST: That sounds like a meaningful upgrade. What did the empirical experiments demonstrate when they tested this against standard baselines?\n\nRESEARCHER: The empirical results revealed solid quantitative improvements. Across test benchmarks, the proposed design outperformed baseline configurations while maintaining computational efficiency and robust error bounds.\n\nHOST: Before we wrap up, what are the primary limitations or caveats that listeners and researchers should keep in mind?\n\nRESEARCHER: As the authors transparently note, performance depends on high-quality source training conditions and specific hyperparameter tuning. It isn't a silver bullet, but it establishes a strong precedent for subsequent breakthroughs.",
+      "duration": 112,
+      "status": "completed",
+      "createdAt": "2026-10-04T17:20:11.492Z",
+      "completedAt": "2026-10-04T17:20:27.526Z",
+      "audioUrl": "/api/podcasts/pod_1791134411492nlrq/audio"
+    },
+    {
+      "id": "pod_1791132907872gcto",
+      "userId": "usr_demo_academic",
+      "paperId": "paper_1791132907666l0r3",
+      "title": "MLT assignment report: The AI Podcast Breakdown",
+      "script": "HOST: Welcome back to PaperCast AI. Today, we're diving into a newly released technical document titled 'MLT assignment report' from the Lead Research Group and Collaborating Investigators. Researcher, thanks for joining us.\n\nRESEARCHER: It's great to be here. This report essentially documents an end-to-end machine learning study, tracing the path from core theoretical motivations to empirical validation.\n\nHOST: Right, and looking at the introduction, the authors start by highlighting historical barriers in this problem space—specifically why prior methodologies struggled to scale effectively. What was the central bottleneck they were aiming to tackle?\n\nRESEARCHER: The foundational motivation stems from existing architectures failing when scaling demands increase. Previous approaches hit bottlenecks in efficiency and operational overhead, which this work targets directly with a refined mathematical and algorithmic pipeline.\n\nHOST: Let's get into that methodology. How do the authors formulate their approach?\n\nRESEARCHER: The report details a structured pipeline: formal mathematical modeling paired with a clearly parameterised algorithmic framework. The experimental setup was calibrated specifically to test whether this formulation could consistently resolve the scaling limits seen in prior baselines.\n\nHOST: And when we look at the results section, the report states that the empirical findings validated superior performance over those comparative baselines. What should listeners take away from that evaluation?\n\nRESEARCHER: The key takeaway is that the empirical testing confirmed the primary hypothesis. The newly introduced methodology demonstrated measurable advantages across the evaluated performance metrics relative to the reference baselines established in the study.\n\nHOST: At the same time, we have to keep our critical hats on. What are the boundaries and limitations acknowledged here?\n\nRESEARCHER: The authors are careful not to overstate universal generalisation. The document frames this as a verified proof-of-concept within their specific experimental parameters, outlining future extensions needed to explore broader real-world deployment.\n\nHOST: A disciplined look at technical formulation and baseline comparison. Thanks for breaking down the report with us!\n\nRESEARCHER: My pleasure.",
+      "duration": 133,
+      "status": "completed",
+      "createdAt": "2026-10-04T16:55:07.872Z",
+      "completedAt": "2026-10-04T16:55:34.794Z",
+      "audioUrl": "/api/podcasts/pod_1791132907872gcto/audio"
+    },
+    {
+      "id": "pod_1791132550432ziye",
+      "userId": "usr_demo_academic",
+      "paperId": "paper_1791132550049pg74",
+      "title": "Dv 12: The AI Podcast Breakdown",
+      "script": "HOST: Welcome to PaperCast AI! Today we're breaking down an insightful new research paper titled \"Dv 12\", authored by Lead Research Group, Collaborating Investigators. Dr. Aris, what core question is this work tackling?\n\nRESEARCHER: Thanks for having me! At its core, this study addresses fundamental roadblocks in previous work. The authors observed that traditional methods struggle with efficiency and scalability, necessitating a fresh architectural strategy.\n\nHOST: And how did they approach solving it? What's the key methodological innovation here?\n\nRESEARCHER: They formulated a dedicated experimental methodology. Rather than relying on standard monolithic assumptions, they redesigned the computation pipeline to maximize data throughput and maintain high precision across complex benchmarks.\n\nHOST: That sounds like a meaningful upgrade. What did the empirical experiments demonstrate when they tested this against standard baselines?\n\nRESEARCHER: The empirical results revealed solid quantitative improvements. Across test benchmarks, the proposed design outperformed baseline configurations while maintaining computational efficiency and robust error bounds.\n\nHOST: Before we wrap up, what are the primary limitations or caveats that listeners and researchers should keep in mind?\n\nRESEARCHER: As the authors transparently note, performance depends on high-quality source training conditions and specific hyperparameter tuning. It isn't a silver bullet, but it establishes a strong precedent for subsequent breakthroughs.",
+      "duration": 112,
+      "status": "completed",
+      "createdAt": "2026-10-04T16:49:10.432Z",
+      "completedAt": "2026-10-04T16:49:41.669Z",
+      "audioUrl": "/api/podcasts/pod_1791132550432ziye/audio"
+    },
+    {
+      "id": "pod_attention_2017",
+      "userId": "usr_demo_academic",
+      "paperId": "paper_attention_2017",
+      "title": "Attention Is All You Need: The Breakthrough That Changed AI Forever",
+      "script": "HOST: Welcome to PaperCast AI! Today we're breaking down one of the most cited research papers in computer science history: \"Attention Is All You Need\" by Vaswani and colleagues at Google Brain and Google Research. Dr. Aris, what was the burning problem researchers faced before this paper?\n\nRESEARCHER: Great to be here! Before 2017, almost all language models were built on Recurrent Neural Networks, or RNNs. The fatal flaw was sequential processing: to understand the tenth word in a sentence, the computer had to compute words one through nine first. You couldn't parallelize it across modern GPUs.\n\nHOST: Exactly, so training on massive internet text took weeks or months. How did the Transformer solve this bottleneck?\n\nRESEARCHER: The authors boldly asked: what if we throw away recurrence completely? Instead, they used \"Self-Attention\". Every word in a sentence looks at every other word simultaneously, calculating relevance scores with queries, keys, and values.\n\nHOST: And the authors backed it up with dramatic numbers. What did the experimental results show?\n\nRESEARCHER: The results were stunning. On the English-to-German translation benchmark, the Transformer achieved a 28.4 BLEU score, surpassing previous state-of-the-art models by over 2.0 points. Even more impressive, they trained it in just 12 hours on eight P100 GPUs, compared to weeks of training for earlier models.\n\nHOST: That efficiency ignited the entire generative AI revolution, from BERT to GPT and modern multimodal models. What limitations should listeners keep in mind?\n\nRESEARCHER: The main limitation noted in the paper is quadratic complexity with respect to sequence length, which later researchers addressed. But the core insight—that attention alone is sufficient—stands as a monumental paradigm shift.",
+      "duration": 172,
+      "status": "completed",
+      "createdAt": "2026-09-28T14:24:00.000Z",
+      "completedAt": "2026-09-28T14:25:30.000Z"
+    }
+  ],
+  "podcast_segments": [
+    {
+      "id": "seg_1",
+      "podcastId": "pod_attention_2017",
+      "speaker": "Host",
+      "text": "Welcome to PaperCast AI! Today we're breaking down one of the most cited research papers in computer science history: 'Attention Is All You Need' by Vaswani and colleagues at Google Brain and Google Research. Dr. Aris, what was the burning problem researchers faced before this paper?",
+      "sequence": 0,
+      "duration": 16
+    },
+    {
+      "id": "seg_2",
+      "podcastId": "pod_attention_2017",
+      "speaker": "Researcher",
+      "text": "Great to be here! Before 2017, almost all language models were built on Recurrent Neural Networks, or RNNs. The fatal flaw was sequential processing: to understand the tenth word in a sentence, the computer had to compute words one through nine first. You couldn't parallelize it across modern GPUs.",
+      "sequence": 1,
+      "duration": 18
+    },
+    {
+      "id": "seg_3",
+      "podcastId": "pod_attention_2017",
+      "speaker": "Host",
+      "text": "Exactly, so training on massive internet text took weeks or months. How did the Transformer solve this bottleneck?",
+      "sequence": 2,
+      "duration": 8
+    },
+    {
+      "id": "seg_4",
+      "podcastId": "pod_attention_2017",
+      "speaker": "Researcher",
+      "text": "The authors boldly asked: what if we throw away recurrence completely? Instead, they used 'Self-Attention'. Every word in a sentence looks at every other word simultaneously, calculating relevance scores with queries, keys, and values.",
+      "sequence": 3,
+      "duration": 16
+    },
+    {
+      "id": "seg_5",
+      "podcastId": "pod_attention_2017",
+      "speaker": "Host",
+      "text": "And the authors backed it up with dramatic numbers. What did the experimental results show?",
+      "sequence": 4,
+      "duration": 7
+    },
+    {
+      "id": "seg_6",
+      "podcastId": "pod_attention_2017",
+      "speaker": "Researcher",
+      "text": "The results were stunning. On the English-to-German translation benchmark, the Transformer achieved a 28.4 BLEU score, surpassing previous state-of-the-art models by over 2.0 points. Even more impressive, they trained it in just 12 hours on eight P100 GPUs, compared to weeks of training for earlier models.",
+      "sequence": 5,
+      "duration": 21
+    },
+    {
+      "id": "seg_7",
+      "podcastId": "pod_attention_2017",
+      "speaker": "Host",
+      "text": "That efficiency ignited the entire generative AI revolution, from BERT to GPT and modern multimodal models. What limitations should listeners keep in mind?",
+      "sequence": 6,
+      "duration": 11
+    },
+    {
+      "id": "seg_8",
+      "podcastId": "pod_attention_2017",
+      "speaker": "Researcher",
+      "text": "The main limitation noted in the paper is quadratic complexity with respect to sequence length, which later researchers addressed. But the core insight—that attention alone is sufficient—stands as a monumental paradigm shift.",
+      "sequence": 7,
+      "duration": 15
+    },
+    {
+      "id": "seg_1791132565466_0",
+      "podcastId": "pod_1791132550432ziye",
+      "speaker": "Host",
+      "text": "Welcome to PaperCast AI! Today we're breaking down an insightful new research paper titled \"Dv 12\", authored by Lead Research Group, Collaborating Investigators. Dr. Aris, what core question is this work tackling?",
+      "sequence": 0,
+      "duration": 15,
+      "audioUrl": "/api/podcasts/pod_1791132550432ziye/audio/segment/0"
+    },
+    {
+      "id": "seg_1791132565466_1",
+      "podcastId": "pod_1791132550432ziye",
+      "speaker": "Researcher",
+      "text": "Thanks for having me! At its core, this study addresses fundamental roadblocks in previous work. The authors observed that traditional methods struggle with efficiency and scalability, necessitating a fresh architectural strategy.",
+      "sequence": 1,
+      "duration": 17,
+      "audioUrl": "/api/podcasts/pod_1791132550432ziye/audio/segment/1"
+    },
+    {
+      "id": "seg_1791132565466_2",
+      "podcastId": "pod_1791132550432ziye",
+      "speaker": "Host",
+      "text": "And how did they approach solving it? What's the key methodological innovation here?",
+      "sequence": 2,
+      "duration": 8,
+      "audioUrl": "/api/podcasts/pod_1791132550432ziye/audio/segment/2"
+    },
+    {
+      "id": "seg_1791132565466_3",
+      "podcastId": "pod_1791132550432ziye",
+      "speaker": "Researcher",
+      "text": "They formulated a dedicated experimental methodology. Rather than relying on standard monolithic assumptions, they redesigned the computation pipeline to maximize data throughput and maintain high precision across complex benchmarks.",
+      "sequence": 3,
+      "duration": 19,
+      "audioUrl": "/api/podcasts/pod_1791132550432ziye/audio/segment/3"
+    },
+    {
+      "id": "seg_1791132565466_4",
+      "podcastId": "pod_1791132550432ziye",
+      "speaker": "Host",
+      "text": "That sounds like a meaningful upgrade. What did the empirical experiments demonstrate when they tested this against standard baselines?",
+      "sequence": 4,
+      "duration": 10,
+      "audioUrl": "/api/podcasts/pod_1791132550432ziye/audio/segment/4"
+    },
+    {
+      "id": "seg_1791132565466_5",
+      "podcastId": "pod_1791132550432ziye",
+      "speaker": "Researcher",
+      "text": "The empirical results revealed solid quantitative improvements. Across test benchmarks, the proposed design outperformed baseline configurations while maintaining computational efficiency and robust error bounds.",
+      "sequence": 5,
+      "duration": 18,
+      "audioUrl": "/api/podcasts/pod_1791132550432ziye/audio/segment/5"
+    },
+    {
+      "id": "seg_1791132565466_6",
+      "podcastId": "pod_1791132550432ziye",
+      "speaker": "Host",
+      "text": "Before we wrap up, what are the primary limitations or caveats that listeners and researchers should keep in mind?",
+      "sequence": 6,
+      "duration": 9,
+      "audioUrl": "/api/podcasts/pod_1791132550432ziye/audio/segment/6"
+    },
+    {
+      "id": "seg_1791132565466_7",
+      "podcastId": "pod_1791132550432ziye",
+      "speaker": "Researcher",
+      "text": "As the authors transparently note, performance depends on high-quality source training conditions and specific hyperparameter tuning. It isn't a silver bullet, but it establishes a strong precedent for subsequent breakthroughs.",
+      "sequence": 7,
+      "duration": 16,
+      "audioUrl": "/api/podcasts/pod_1791132550432ziye/audio/segment/7"
+    },
+    {
+      "id": "seg_1791132925500_0",
+      "podcastId": "pod_1791132907872gcto",
+      "speaker": "Host",
+      "text": "Welcome back to PaperCast AI. Today, we're diving into a newly released technical document titled 'MLT assignment report' from the Lead Research Group and Collaborating Investigators. Researcher, thanks for joining us.",
+      "sequence": 0,
+      "duration": 13,
+      "audioUrl": "/api/podcasts/pod_1791132907872gcto/audio/segment/0"
+    },
+    {
+      "id": "seg_1791132925500_1",
+      "podcastId": "pod_1791132907872gcto",
+      "speaker": "Researcher",
+      "text": "It's great to be here. This report essentially documents an end-to-end machine learning study, tracing the path from core theoretical motivations to empirical validation.",
+      "sequence": 1,
+      "duration": 10,
+      "audioUrl": "/api/podcasts/pod_1791132907872gcto/audio/segment/1"
+    },
+    {
+      "id": "seg_1791132925500_2",
+      "podcastId": "pod_1791132907872gcto",
+      "speaker": "Host",
+      "text": "Right, and looking at the introduction, the authors start by highlighting historical barriers in this problem space—specifically why prior methodologies struggled to scale effectively. What was the central bottleneck they were aiming to tackle?",
+      "sequence": 2,
+      "duration": 15,
+      "audioUrl": "/api/podcasts/pod_1791132907872gcto/audio/segment/2"
+    },
+    {
+      "id": "seg_1791132925500_3",
+      "podcastId": "pod_1791132907872gcto",
+      "speaker": "Researcher",
+      "text": "The foundational motivation stems from existing architectures failing when scaling demands increase. Previous approaches hit bottlenecks in efficiency and operational overhead, which this work targets directly with a refined mathematical and algorithmic pipeline.",
+      "sequence": 3,
+      "duration": 14,
+      "audioUrl": "/api/podcasts/pod_1791132907872gcto/audio/segment/3"
+    },
+    {
+      "id": "seg_1791132925500_4",
+      "podcastId": "pod_1791132907872gcto",
+      "speaker": "Host",
+      "text": "Let's get into that methodology. How do the authors formulate their approach?",
+      "sequence": 4,
+      "duration": 5,
+      "audioUrl": "/api/podcasts/pod_1791132907872gcto/audio/segment/4"
+    },
+    {
+      "id": "seg_1791132925500_5",
+      "podcastId": "pod_1791132907872gcto",
+      "speaker": "Researcher",
+      "text": "The report details a structured pipeline: formal mathematical modeling paired with a clearly parameterised algorithmic framework. The experimental setup was calibrated specifically to test whether this formulation could consistently resolve the scaling limits seen in prior baselines.",
+      "sequence": 5,
+      "duration": 16,
+      "audioUrl": "/api/podcasts/pod_1791132907872gcto/audio/segment/5"
+    },
+    {
+      "id": "seg_1791132925500_6",
+      "podcastId": "pod_1791132907872gcto",
+      "speaker": "Host",
+      "text": "And when we look at the results section, the report states that the empirical findings validated superior performance over those comparative baselines. What should listeners take away from that evaluation?",
+      "sequence": 6,
+      "duration": 13,
+      "audioUrl": "/api/podcasts/pod_1791132907872gcto/audio/segment/6"
+    },
+    {
+      "id": "seg_1791132925500_7",
+      "podcastId": "pod_1791132907872gcto",
+      "speaker": "Researcher",
+      "text": "The key takeaway is that the empirical testing confirmed the primary hypothesis. The newly introduced methodology demonstrated measurable advantages across the evaluated performance metrics relative to the reference baselines established in the study.",
+      "sequence": 7,
+      "duration": 14,
+      "audioUrl": "/api/podcasts/pod_1791132907872gcto/audio/segment/7"
+    },
+    {
+      "id": "seg_1791132925500_8",
+      "podcastId": "pod_1791132907872gcto",
+      "speaker": "Host",
+      "text": "At the same time, we have to keep our critical hats on. What are the boundaries and limitations acknowledged here?",
+      "sequence": 8,
+      "duration": 9,
+      "audioUrl": "/api/podcasts/pod_1791132907872gcto/audio/segment/8"
+    },
+    {
+      "id": "seg_1791132925500_9",
+      "podcastId": "pod_1791132907872gcto",
+      "speaker": "Researcher",
+      "text": "The authors are careful not to overstate universal generalisation. The document frames this as a verified proof-of-concept within their specific experimental parameters, outlining future extensions needed to explore broader real-world deployment.",
+      "sequence": 9,
+      "duration": 13,
+      "audioUrl": "/api/podcasts/pod_1791132907872gcto/audio/segment/9"
+    },
+    {
+      "id": "seg_1791132925500_10",
+      "podcastId": "pod_1791132907872gcto",
+      "speaker": "Host",
+      "text": "A disciplined look at technical formulation and baseline comparison. Thanks for breaking down the report with us!",
+      "sequence": 10,
+      "duration": 7,
+      "audioUrl": "/api/podcasts/pod_1791132907872gcto/audio/segment/10"
+    },
+    {
+      "id": "seg_1791132925500_11",
+      "podcastId": "pod_1791132907872gcto",
+      "speaker": "Researcher",
+      "text": "My pleasure.",
+      "sequence": 11,
+      "duration": 4,
+      "audioUrl": "/api/podcasts/pod_1791132907872gcto/audio/segment/11"
+    },
+    {
+      "id": "seg_1791134423748_0",
+      "podcastId": "pod_1791134411492nlrq",
+      "speaker": "Host",
+      "text": "Welcome to PaperCast AI! Today we're breaking down an insightful new research paper titled \"AI\", authored by Lead Research Group, Collaborating Investigators. Dr. Aris, what core question is this work tackling?",
+      "sequence": 0,
+      "duration": 15,
+      "audioUrl": "/api/podcasts/pod_1791134411492nlrq/audio/segment/0"
+    },
+    {
+      "id": "seg_1791134423748_1",
+      "podcastId": "pod_1791134411492nlrq",
+      "speaker": "Researcher",
+      "text": "Thanks for having me! At its core, this study addresses fundamental roadblocks in previous work. The authors observed that traditional methods struggle with efficiency and scalability, necessitating a fresh architectural strategy.",
+      "sequence": 1,
+      "duration": 17,
+      "audioUrl": "/api/podcasts/pod_1791134411492nlrq/audio/segment/1"
+    },
+    {
+      "id": "seg_1791134423748_2",
+      "podcastId": "pod_1791134411492nlrq",
+      "speaker": "Host",
+      "text": "And how did they approach solving it? What's the key methodological innovation here?",
+      "sequence": 2,
+      "duration": 8,
+      "audioUrl": "/api/podcasts/pod_1791134411492nlrq/audio/segment/2"
+    },
+    {
+      "id": "seg_1791134423748_3",
+      "podcastId": "pod_1791134411492nlrq",
+      "speaker": "Researcher",
+      "text": "They formulated a dedicated experimental methodology. Rather than relying on standard monolithic assumptions, they redesigned the computation pipeline to maximize data throughput and maintain high precision across complex benchmarks.",
+      "sequence": 3,
+      "duration": 19,
+      "audioUrl": "/api/podcasts/pod_1791134411492nlrq/audio/segment/3"
+    },
+    {
+      "id": "seg_1791134423748_4",
+      "podcastId": "pod_1791134411492nlrq",
+      "speaker": "Host",
+      "text": "That sounds like a meaningful upgrade. What did the empirical experiments demonstrate when they tested this against standard baselines?",
+      "sequence": 4,
+      "duration": 10,
+      "audioUrl": "/api/podcasts/pod_1791134411492nlrq/audio/segment/4"
+    },
+    {
+      "id": "seg_1791134423748_5",
+      "podcastId": "pod_1791134411492nlrq",
+      "speaker": "Researcher",
+      "text": "The empirical results revealed solid quantitative improvements. Across test benchmarks, the proposed design outperformed baseline configurations while maintaining computational efficiency and robust error bounds.",
+      "sequence": 5,
+      "duration": 18,
+      "audioUrl": "/api/podcasts/pod_1791134411492nlrq/audio/segment/5"
+    },
+    {
+      "id": "seg_1791134423748_6",
+      "podcastId": "pod_1791134411492nlrq",
+      "speaker": "Host",
+      "text": "Before we wrap up, what are the primary limitations or caveats that listeners and researchers should keep in mind?",
+      "sequence": 6,
+      "duration": 9,
+      "audioUrl": "/api/podcasts/pod_1791134411492nlrq/audio/segment/6"
+    },
+    {
+      "id": "seg_1791134423748_7",
+      "podcastId": "pod_1791134411492nlrq",
+      "speaker": "Researcher",
+      "text": "As the authors transparently note, performance depends on high-quality source training conditions and specific hyperparameter tuning. It isn't a silver bullet, but it establishes a strong precedent for subsequent breakthroughs.",
+      "sequence": 7,
+      "duration": 16,
+      "audioUrl": "/api/podcasts/pod_1791134411492nlrq/audio/segment/7"
+    },
+    {
+      "id": "seg_1791135717669_0",
+      "podcastId": "pod_1791135709114750x",
+      "speaker": "Host",
+      "text": "Welcome to PaperCast AI! Today we're breaking down an insightful new research paper titled \"AI\", authored by Lead Research Group, Collaborating Investigators. Dr. Aris, what core question is this work tackling?",
+      "sequence": 0,
+      "duration": 15,
+      "audioUrl": "/api/podcasts/pod_1791135709114750x/audio/segment/0"
+    },
+    {
+      "id": "seg_1791135717669_1",
+      "podcastId": "pod_1791135709114750x",
+      "speaker": "Researcher",
+      "text": "Thanks for having me! At its core, this study addresses fundamental roadblocks in previous work. The authors observed that traditional methods struggle with efficiency and scalability, necessitating a fresh architectural strategy.",
+      "sequence": 1,
+      "duration": 17,
+      "audioUrl": "/api/podcasts/pod_1791135709114750x/audio/segment/1"
+    },
+    {
+      "id": "seg_1791135717669_2",
+      "podcastId": "pod_1791135709114750x",
+      "speaker": "Host",
+      "text": "And how did they approach solving it? What's the key methodological innovation here?",
+      "sequence": 2,
+      "duration": 8,
+      "audioUrl": "/api/podcasts/pod_1791135709114750x/audio/segment/2"
+    },
+    {
+      "id": "seg_1791135717669_3",
+      "podcastId": "pod_1791135709114750x",
+      "speaker": "Researcher",
+      "text": "They formulated a dedicated experimental methodology. Rather than relying on standard monolithic assumptions, they redesigned the computation pipeline to maximize data throughput and maintain high precision across complex benchmarks.",
+      "sequence": 3,
+      "duration": 19,
+      "audioUrl": "/api/podcasts/pod_1791135709114750x/audio/segment/3"
+    },
+    {
+      "id": "seg_1791135717669_4",
+      "podcastId": "pod_1791135709114750x",
+      "speaker": "Host",
+      "text": "That sounds like a meaningful upgrade. What did the empirical experiments demonstrate when they tested this against standard baselines?",
+      "sequence": 4,
+      "duration": 10,
+      "audioUrl": "/api/podcasts/pod_1791135709114750x/audio/segment/4"
+    },
+    {
+      "id": "seg_1791135717669_5",
+      "podcastId": "pod_1791135709114750x",
+      "speaker": "Researcher",
+      "text": "The empirical results revealed solid quantitative improvements. Across test benchmarks, the proposed design outperformed baseline configurations while maintaining computational efficiency and robust error bounds.",
+      "sequence": 5,
+      "duration": 18,
+      "audioUrl": "/api/podcasts/pod_1791135709114750x/audio/segment/5"
+    },
+    {
+      "id": "seg_1791135717669_6",
+      "podcastId": "pod_1791135709114750x",
+      "speaker": "Host",
+      "text": "Before we wrap up, what are the primary limitations or caveats that listeners and researchers should keep in mind?",
+      "sequence": 6,
+      "duration": 9,
+      "audioUrl": "/api/podcasts/pod_1791135709114750x/audio/segment/6"
+    },
+    {
+      "id": "seg_1791135717669_7",
+      "podcastId": "pod_1791135709114750x",
+      "speaker": "Researcher",
+      "text": "As the authors transparently note, performance depends on high-quality source training conditions and specific hyperparameter tuning. It isn't a silver bullet, but it establishes a strong precedent for subsequent breakthroughs.",
+      "sequence": 7,
+      "duration": 16,
+      "audioUrl": "/api/podcasts/pod_1791135709114750x/audio/segment/7"
+    }
+  ],
+  "ratings": [
+    {
+      "id": "rat_1",
+      "userId": "usr_demo_academic",
+      "podcastId": "pod_attention_2017",
+      "clarityScore": 5,
+      "accuracyScore": 5,
+      "usefulnessScore": 5,
+      "overallScore": 5,
+      "feedback": "Incredible audio breakdown! The dialogue between Host and Researcher made attention mechanisms intuitive without dumbing down the mathematical rigor.",
+      "createdAt": "2026-09-29T09:15:00.000Z",
+      "userName": "Dr. Elena Vance"
+    }
+  ],
+  "user_history": [
+    {
+      "id": "hist_1791136229344",
+      "userId": "usr_17911354795195pa5",
+      "actionType": "uploaded",
+      "paperId": "paper_1791136229344a3kp",
+      "title": "Uploaded research paper: S44163 022 00022 8",
+      "timestamp": "2026-10-04T17:50:29.344Z",
+      "metadata": {
+        "fileName": "s44163-022-00022-8.pdf",
+        "fileSize": 75
+      }
+    },
+    {
+      "id": "hist_1791135723203",
+      "userId": "usr_17911354795195pa5",
+      "actionType": "generated",
+      "paperId": "paper_1791135708979ci45",
+      "podcastId": "pod_1791135709114750x",
+      "title": "Generated AI Podcast: AI",
+      "timestamp": "2026-10-04T17:42:03.203Z",
+      "metadata": {
+        "duration": 112,
+        "segmentsCount": 8
+      }
+    },
+    {
+      "id": "hist_1791135708979",
+      "userId": "usr_17911354795195pa5",
+      "actionType": "uploaded",
+      "paperId": "paper_1791135708979ci45",
+      "title": "Uploaded research paper: AI",
+      "timestamp": "2026-10-04T17:41:48.979Z",
+      "metadata": {
+        "fileName": "s44163-022-00022-8.pdf",
+        "fileSize": 1657198
+      }
+    },
+    {
+      "id": "hist_1791134566582",
+      "userId": "usr_demo_academic",
+      "actionType": "viewed",
+      "paperId": "paper_1791134411138ioqx",
+      "title": "Viewed paper: AI",
+      "timestamp": "2026-10-04T17:22:46.582Z"
+    },
+    {
+      "id": "hist_1791134427526",
+      "userId": "usr_demo_academic",
+      "actionType": "generated",
+      "paperId": "paper_1791134411138ioqx",
+      "podcastId": "pod_1791134411492nlrq",
+      "title": "Generated AI Podcast: AI",
+      "timestamp": "2026-10-04T17:20:27.526Z",
+      "metadata": {
+        "duration": 112,
+        "segmentsCount": 8
+      }
+    },
+    {
+      "id": "hist_1791134411138",
+      "userId": "usr_demo_academic",
+      "actionType": "uploaded",
+      "paperId": "paper_1791134411138ioqx",
+      "title": "Uploaded research paper: AI",
+      "timestamp": "2026-10-04T17:20:11.138Z",
+      "metadata": {
+        "fileName": "s44163-022-00022-8.pdf",
+        "fileSize": 1657198
+      }
+    },
+    {
+      "id": "hist_1791134162817",
+      "userId": "usr_demo_academic",
+      "actionType": "listened",
+      "paperId": "paper_1791132907666l0r3",
+      "podcastId": "pod_1791132907872gcto",
+      "title": "Listened to: MLT assignment report: The AI Podcast Breakdown",
+      "timestamp": "2026-10-04T17:16:02.817Z",
+      "metadata": {
+        "completionPercentage": 100,
+        "duration": 133
+      }
+    },
+    {
+      "id": "hist_1791134044007",
+      "userId": "usr_demo_academic",
+      "actionType": "viewed",
+      "paperId": "paper_1791132907666l0r3",
+      "title": "Viewed paper: MLT assignment report",
+      "timestamp": "2026-10-04T17:14:04.007Z"
+    },
+    {
+      "id": "hist_1791133605554",
+      "userId": "usr_demo_academic",
+      "actionType": "viewed",
+      "paperId": "paper_1791132550049pg74",
+      "title": "Viewed paper: Dv 12",
+      "timestamp": "2026-10-04T17:06:45.554Z"
+    },
+    {
+      "id": "hist_1791133081309",
+      "userId": "usr_demo_academic",
+      "actionType": "listened",
+      "paperId": "paper_attention_2017",
+      "podcastId": "pod_attention_2017",
+      "title": "Listened to: Attention Is All You Need: The Breakthrough That Changed AI Forever",
+      "timestamp": "2026-10-04T16:58:01.309Z",
+      "metadata": {
+        "completionPercentage": 100,
+        "duration": 172
+      }
+    },
+    {
+      "id": "hist_1791132934794",
+      "userId": "usr_demo_academic",
+      "actionType": "generated",
+      "paperId": "paper_1791132907666l0r3",
+      "podcastId": "pod_1791132907872gcto",
+      "title": "Generated AI Podcast: MLT assignment report",
+      "timestamp": "2026-10-04T16:55:34.794Z",
+      "metadata": {
+        "duration": 133,
+        "segmentsCount": 12
+      }
+    },
+    {
+      "id": "hist_1791132907666",
+      "userId": "usr_demo_academic",
+      "actionType": "uploaded",
+      "paperId": "paper_1791132907666l0r3",
+      "title": "Uploaded research paper: MLT assignment report",
+      "timestamp": "2026-10-04T16:55:07.666Z",
+      "metadata": {
+        "fileName": "ilovepdf_merged.pdf",
+        "fileSize": 1285593
+      }
+    },
+    {
+      "id": "hist_1791132581669",
+      "userId": "usr_demo_academic",
+      "actionType": "generated",
+      "paperId": "paper_1791132550049pg74",
+      "podcastId": "pod_1791132550432ziye",
+      "title": "Generated AI Podcast: Dv 12",
+      "timestamp": "2026-10-04T16:49:41.669Z",
+      "metadata": {
+        "duration": 112,
+        "segmentsCount": 8
+      }
+    },
+    {
+      "id": "hist_1791132550049",
+      "userId": "usr_demo_academic",
+      "actionType": "uploaded",
+      "paperId": "paper_1791132550049pg74",
+      "title": "Uploaded research paper: Dv 12",
+      "timestamp": "2026-10-04T16:49:10.049Z",
+      "metadata": {
+        "fileName": "dv 12.pdf",
+        "fileSize": 355931
+      }
+    },
+    {
+      "id": "hist_1",
+      "userId": "usr_demo_academic",
+      "actionType": "listened",
+      "paperId": "paper_attention_2017",
+      "podcastId": "pod_attention_2017",
+      "title": "Attention Is All You Need: The Breakthrough That Changed AI Forever",
+      "timestamp": "2026-10-04T16:45:22.846Z",
+      "metadata": {
+        "completionPercentage": 100
+      }
+    },
+    {
+      "id": "hist_2",
+      "userId": "usr_demo_academic",
+      "actionType": "rated",
+      "podcastId": "pod_attention_2017",
+      "title": "Rated podcast 5 stars",
+      "timestamp": "2026-09-29T09:15:00.000Z"
+    },
+    {
+      "id": "hist_3",
+      "userId": "usr_demo_academic",
+      "actionType": "generated",
+      "paperId": "paper_attention_2017",
+      "podcastId": "pod_attention_2017",
+      "title": "Generated 2-speaker AI Podcast for Attention Is All You Need",
+      "timestamp": "2026-09-28T14:25:30.000Z"
+    },
+    {
+      "id": "hist_4",
+      "userId": "usr_demo_academic",
+      "actionType": "uploaded",
+      "paperId": "paper_attention_2017",
+      "title": "Uploaded vaswani2017_attention.pdf (2.2 MB)",
+      "timestamp": "2026-09-28T14:20:00.000Z"
+    }
+  ],
+  "search_history": [
+    {
+      "id": "sh_1",
+      "userId": "usr_demo_academic",
+      "query": "Transformers Attention",
+      "searchedAt": "2026-09-29T10:00:00.000Z"
+    },
+    {
+      "id": "sh_2",
+      "userId": "usr_demo_academic",
+      "query": "Vaswani BLEU score",
+      "searchedAt": "2026-09-28T15:00:00.000Z"
+    }
+  ],
+  "evaluations": [
+    {
+      "id": "eval_1791135723203",
+      "podcastId": "pod_1791135709114750x",
+      "factualAccuracyScore": 72,
+      "clarityScore": 88,
+      "unsupportedClaims": 4,
+      "detectedIssues": [
+        {
+          "type": "unsupported_claim",
+          "severity": "low",
+          "quote": "authored by Lead Research Group, Collaborating Investigators",
+          "sourceContext": "None provided in source metadata.",
+          "explanation": "The script fabricates or assumes placeholder author names not present in the source text."
+        },
+        {
+          "type": "verified_accurate",
+          "severity": "info",
+          "quote": "The authors observed that traditional methods struggle with efficiency and scalability, necessitating a fresh architectural strategy.",
+          "sourceContext": "[INTRODUCTION]: Outlines the technical motivation and historical barriers preventing prior methodologies from scaling effectively.",
+          "explanation": "Directly aligns with the introduction's focus on scaling barriers and technical motivations."
+        },
+        {
+          "type": "unsupported_claim",
+          "severity": "medium",
+          "quote": "redesigned the computation pipeline to maximize data throughput and maintain high precision across complex benchmarks",
+          "sourceContext": "[METHODOLOGY]: Details the mathematical formulation, algorithmic pipelines, and experimental parameterization used to test the hypothesis.",
+          "explanation": "Specific operational outcomes such as maximizing 'data throughput' and 'high precision' are unverified extrapolations not specified in the source."
+        },
+        {
+          "type": "simplification",
+          "severity": "low",
+          "quote": "Across test benchmarks, the proposed design outperformed baseline configurations while maintaining computational efficiency and robust error bounds.",
+          "sourceContext": "[RESULTS]: Reports empirical quantitative findings, validating superior performance metrics over comparative baselines.",
+          "explanation": "While superior baseline performance is corroborated, specific claims regarding 'robust error bounds' are added without source grounding."
+        },
+        {
+          "type": "unsupported_claim",
+          "severity": "medium",
+          "quote": "performance depends on high-quality source training conditions and specific hyperparameter tuning",
+          "sourceContext": "[CONCLUSION]: Synthesizes primary contributions, confirming the viability of the approach and outlining potential future extensions.",
+          "explanation": "The source conclusion does not mention training data conditions or hyperparameter sensitivity as specific caveats."
+        }
+      ],
+      "evaluationSummary": "The podcast script accurately captures the general trajectory and high-level structure of the abstract research summary. However, it introduces several unsupported technical specifics, including assertions about data throughput, error bounds, and specific training/hyperparameter dependencies that are absent from the provided text.",
+      "createdAt": "2026-10-04T17:42:03.203Z"
+    },
+    {
+      "id": "eval_1791134427525",
+      "podcastId": "pod_1791134411492nlrq",
+      "factualAccuracyScore": 93,
+      "clarityScore": 91,
+      "unsupportedClaims": 0,
+      "detectedIssues": [
+        {
+          "type": "verified_accurate",
+          "severity": "info",
+          "quote": "addresses fundamental roadblocks in previous work",
+          "sourceContext": "Introduction & Methodology sections",
+          "explanation": "Accurately mirrors the motivation and literature problem space highlighted in the paper."
+        },
+        {
+          "type": "simplification",
+          "severity": "low",
+          "quote": "fresh architectural strategy",
+          "sourceContext": "Methodology section",
+          "explanation": "Colloquial terminology chosen for listener accessibility while retaining technical integrity."
+        }
+      ],
+      "evaluationSummary": "The podcast script faithfully synthesizes the core findings of \"AI\". Technical explanations remain grounded in the extracted sections with zero unverified empirical claims.",
+      "createdAt": "2026-10-04T17:20:27.525Z"
+    },
+    {
+      "id": "eval_1791132934794",
+      "podcastId": "pod_1791132907872gcto",
+      "factualAccuracyScore": 93,
+      "clarityScore": 91,
+      "unsupportedClaims": 0,
+      "detectedIssues": [
+        {
+          "type": "verified_accurate",
+          "severity": "info",
+          "quote": "addresses fundamental roadblocks in previous work",
+          "sourceContext": "Introduction & Methodology sections",
+          "explanation": "Accurately mirrors the motivation and literature problem space highlighted in the paper."
+        },
+        {
+          "type": "simplification",
+          "severity": "low",
+          "quote": "fresh architectural strategy",
+          "sourceContext": "Methodology section",
+          "explanation": "Colloquial terminology chosen for listener accessibility while retaining technical integrity."
+        }
+      ],
+      "evaluationSummary": "The podcast script faithfully synthesizes the core findings of \"MLT assignment report\". Technical explanations remain grounded in the extracted sections with zero unverified empirical claims.",
+      "createdAt": "2026-10-04T16:55:34.794Z"
+    },
+    {
+      "id": "eval_1791132581669",
+      "podcastId": "pod_1791132550432ziye",
+      "factualAccuracyScore": 93,
+      "clarityScore": 91,
+      "unsupportedClaims": 0,
+      "detectedIssues": [
+        {
+          "type": "verified_accurate",
+          "severity": "info",
+          "quote": "addresses fundamental roadblocks in previous work",
+          "sourceContext": "Introduction & Methodology sections",
+          "explanation": "Accurately mirrors the motivation and literature problem space highlighted in the paper."
+        },
+        {
+          "type": "simplification",
+          "severity": "low",
+          "quote": "fresh architectural strategy",
+          "sourceContext": "Methodology section",
+          "explanation": "Colloquial terminology chosen for listener accessibility while retaining technical integrity."
+        }
+      ],
+      "evaluationSummary": "The podcast script faithfully synthesizes the core findings of \"Dv 12\". Technical explanations remain grounded in the extracted sections with zero unverified empirical claims.",
+      "createdAt": "2026-10-04T16:49:41.669Z"
+    },
+    {
+      "id": "eval_1",
+      "podcastId": "pod_attention_2017",
+      "factualAccuracyScore": 96,
+      "clarityScore": 94,
+      "unsupportedClaims": 0,
+      "detectedIssues": [
+        {
+          "type": "verified_accurate",
+          "severity": "info",
+          "quote": "28.4 BLEU score, surpassing previous state-of-the-art models by over 2.0 points",
+          "sourceContext": "Table 2: WMT 2014 English-to-German BLEU score 28.4 vs previous best 26.3",
+          "explanation": "Strictly matches Table 2 of Vaswani et al. Numerical claim is 100% faithful."
+        },
+        {
+          "type": "verified_accurate",
+          "severity": "info",
+          "quote": "12 hours on eight P100 GPUs",
+          "sourceContext": "Section 5.2 Model Variations: Base model trained for 100,000 steps or 12 hours on 8 P100 GPUs.",
+          "explanation": "Hardware specification and training duration verified directly against source text."
+        },
+        {
+          "type": "simplification",
+          "severity": "low",
+          "quote": "throw away recurrence completely",
+          "sourceContext": "Section 1: Dispensing with recurrence and convolutions entirely.",
+          "explanation": "Conversational metaphor accurately conveys the methodological shift from RNNs to pure attention."
+        }
+      ],
+      "evaluationSummary": "The podcast demonstrates exceptionally high fidelity to Vaswani et al. (2017). All quantitative metrics (28.4 BLEU, 12 hours training, 8 P100 GPUs) accurately mirror source tables with zero hallucinated author claims or invented benchmarks.",
+      "createdAt": "2026-09-28T14:26:00.000Z"
+    }
+  ]
+}
