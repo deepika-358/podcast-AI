@@ -121,7 +121,17 @@ export const UploadPaperPage: React.FC<UploadPaperPageProps> = ({ navigate }) =>
       // Trigger podcast generation
       const genRes = await api.generatePodcast(uploadRes.paper.id);
 
-      // Open pipeline modal and start polling
+      // Open pipeline modal immediately and start polling
+      setActiveJobProgress({
+        jobId: genRes.jobId,
+        podcastId: genRes.podcastId,
+        paperId: uploadRes.paper.id,
+        status: 'processing',
+        step: 1,
+        totalSteps: 7,
+        message: 'Uploading document buffer and parsing typography...',
+      });
+
       const pollInterval = setInterval(async () => {
         try {
           const jobRes = await api.getJobProgress(genRes.jobId);
@@ -133,7 +143,7 @@ export const UploadPaperPage: React.FC<UploadPaperPageProps> = ({ navigate }) =>
         } catch {
           clearInterval(pollInterval);
         }
-      }, 1000);
+      }, 700);
 
     } catch (err: any) {
       setError(err.message || 'Failed to process and analyze paper.');
@@ -151,6 +161,16 @@ export const UploadPaperPage: React.FC<UploadPaperPageProps> = ({ navigate }) =>
 
       const genRes = await api.generatePodcast(res.paper.id);
       
+      setActiveJobProgress({
+        jobId: genRes.jobId,
+        podcastId: genRes.podcastId,
+        paperId: res.paper.id,
+        status: 'processing',
+        step: 1,
+        totalSteps: 7,
+        message: 'Uploading document buffer and parsing typography...',
+      });
+
       const pollInterval = setInterval(async () => {
         try {
           const jobRes = await api.getJobProgress(genRes.jobId);
@@ -162,7 +182,7 @@ export const UploadPaperPage: React.FC<UploadPaperPageProps> = ({ navigate }) =>
         } catch {
           clearInterval(pollInterval);
         }
-      }, 1000);
+      }, 700);
     } catch (err: any) {
       showToast('Failed to load sample: ' + err.message, 'error');
     }

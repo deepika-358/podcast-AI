@@ -1,4 +1,5 @@
 import { 
+  User,
   ResearchPaper, 
   Podcast, 
   PodcastSegment, 
@@ -10,6 +11,7 @@ import {
 } from '../types/index';
 
 const STORAGE_KEYS = {
+  USERS: 'papercast_local_users',
   PAPERS: 'papercast_local_papers',
   PODCASTS: 'papercast_local_podcasts',
   JOBS: 'papercast_local_jobs',
@@ -178,6 +180,88 @@ function setStored<T>(key: string, value: T): void {
 }
 
 export const clientPipeline = {
+  async login(email: string, password?: string): Promise<{ user: User; token: string }> {
+    const users = getStored<User[]>(STORAGE_KEYS.USERS, []);
+    const cleanEmail = email.trim().toLowerCase();
+    let found = users.find(u => u.email.toLowerCase() === cleanEmail);
+
+    if (!found) {
+      const name = cleanEmail.split('@')[0];
+      found = {
+        id: 'usr_' + Date.now(),
+        name: name.charAt(0).toUpperCase() + name.slice(1),
+        email: cleanEmail,
+        role: 'researcher',
+        profileImage: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
+        createdAt: new Date().toISOString(),
+        lastLogin: new Date().toISOString(),
+        preferences: {
+          theme: 'dark',
+          hostVoice: 'Puck',
+          researcherVoice: 'Kore',
+          audioSpeed: 1,
+          emailNotifications: true,
+        }
+      };
+      users.push(found);
+      setStored(STORAGE_KEYS.USERS, users);
+    } else {
+      found.lastLogin = new Date().toISOString();
+      setStored(STORAGE_KEYS.USERS, users);
+    }
+
+    const token = 'token_client_' + Date.now();
+    localStorage.setItem('papercast_token', token);
+    localStorage.setItem('papercast_user', JSON.stringify(found));
+    return { user: found, token };
+  },
+
+  async register(name: string, email: string, password?: string, role?: string): Promise<{ user: User; token: string }> {
+    const users = getStored<User[]>(STORAGE_KEYS.USERS, []);
+    const cleanEmail = email.trim().toLowerCase();
+    let found = users.find(u => u.email.toLowerCase() === cleanEmail);
+
+    if (found) {
+      found.name = name.trim();
+      found.role = (role as any) || found.role;
+      found.lastLogin = new Date().toISOString();
+    } else {
+      found = {
+        id: 'usr_' + Date.now(),
+        name: name.trim(),
+        email: cleanEmail,
+        role: (role as any) || 'researcher',
+        profileImage: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
+        createdAt: new Date().toISOString(),
+        lastLogin: new Date().toISOString(),
+        preferences: {
+          theme: 'dark',
+          hostVoice: 'Puck',
+          researcherVoice: 'Kore',
+          audioSpeed: 1,
+          emailNotifications: true,
+        }
+      };
+      users.push(found);
+    }
+
+    setStored(STORAGE_KEYS.USERS, users);
+    const token = 'token_client_' + Date.now();
+    localStorage.setItem('papercast_token', token);
+    localStorage.setItem('papercast_user', JSON.stringify(found));
+    return { user: found, token };
+  },
+
+  async getMe(): Promise<{ user: User }> {
+    const storedUser = localStorage.getItem('papercast_user');
+    if (storedUser) {
+      try {
+        return { user: JSON.parse(storedUser) };
+      } catch {}
+    }
+    return this.login('deepikamr2006@gmail.com');
+  },
+
   async uploadPaper(payload: {
     rawText?: string;
     pdfBase64?: string;

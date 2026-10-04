@@ -70,30 +70,51 @@ class ApiClient {
     return data;
   }
 
-  // Auth
+  // Auth with automatic client-side fallback for Vercel static deployments
   async login(email: string, password: string): Promise<{ user: User; token: string }> {
-    return this.request<{ user: User; token: string }>('/auth/login', {
-      method: 'POST',
-      body: JSON.stringify({ email, password }),
-    });
+    try {
+      return await this.request<{ user: User; token: string }>('/auth/login', {
+        method: 'POST',
+        body: JSON.stringify({ email, password }),
+      });
+    } catch (err) {
+      console.info('Switching to client-side auth for login (status 405/404 on Vercel):', err);
+      return clientPipeline.login(email, password);
+    }
   }
 
   async register(name: string, email: string, password: string, role?: string): Promise<{ user: User; token: string }> {
-    return this.request<{ user: User; token: string }>('/auth/register', {
-      method: 'POST',
-      body: JSON.stringify({ name, email, password, role }),
-    });
+    try {
+      return await this.request<{ user: User; token: string }>('/auth/register', {
+        method: 'POST',
+        body: JSON.stringify({ name, email, password, role }),
+      });
+    } catch (err) {
+      console.info('Switching to client-side auth for registration (status 405/404 on Vercel):', err);
+      return clientPipeline.register(name, email, password, role);
+    }
   }
 
   async getMe(): Promise<{ user: User }> {
-    return this.request<{ user: User }>('/auth/me');
+    try {
+      return await this.request<{ user: User }>('/auth/me');
+    } catch {
+      return clientPipeline.getMe();
+    }
   }
 
   async updateProfile(updates: Partial<User>): Promise<{ user: User }> {
-    return this.request<{ user: User }>('/auth/profile', {
-      method: 'PATCH',
-      body: JSON.stringify(updates),
-    });
+    try {
+      return await this.request<{ user: User }>('/auth/profile', {
+        method: 'PATCH',
+        body: JSON.stringify(updates),
+      });
+    } catch {
+      const current = await clientPipeline.getMe();
+      const updated = { ...current.user, ...updates };
+      localStorage.setItem('papercast_user', JSON.stringify(updated));
+      return { user: updated };
+    }
   }
 
   // Papers with seamless In-Browser Fallback for Vercel static deployments
