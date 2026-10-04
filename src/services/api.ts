@@ -28,10 +28,15 @@ class ApiClient {
       headers['Authorization'] = `Bearer ${token}`;
     }
 
-    const response = await fetch(`${BASE_URL}${endpoint}`, {
-      ...options,
-      headers,
-    });
+    let response: Response;
+    try {
+      response = await fetch(`${BASE_URL}${endpoint}`, {
+        ...options,
+        headers,
+      });
+    } catch {
+      throw new Error('Unable to connect to server. Please check your internet connection.');
+    }
 
     if (response.status === 401) {
       // Clear token on unauthorized if not login/register
@@ -41,10 +46,24 @@ class ApiClient {
       }
     }
 
-    const data = await response.json();
+    let data: any = null;
+    const responseText = await response.text();
+    if (responseText) {
+      try {
+        data = JSON.parse(responseText);
+      } catch {
+        if (!response.ok) {
+          throw new Error(
+            response.status === 404
+              ? 'Server endpoint is starting up. Please try again in a few seconds.'
+              : `Server temporarily unavailable (${response.status}). Please try again.`
+          );
+        }
+      }
+    }
 
     if (!response.ok) {
-      throw new Error(data.error || 'Network request failed');
+      throw new Error(data?.error || data?.message || `Request failed with status ${response.status}`);
     }
 
     return data;
