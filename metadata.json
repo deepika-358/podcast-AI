@@ -1,0 +1,6 @@
+{
+  "name": "PaperCast AI",
+  "description": "Turn Research Papers into Engaging AI Podcasts. Transform complex academic research into clear, conversational audio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
